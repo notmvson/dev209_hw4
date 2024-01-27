@@ -2,4 +2,32 @@ body {
     margin: 50px;
     font-family: Helvetica, sans-serif;
     font-size: 150%;
+    text-align: center;
 }
+
+h2 {
+    text-align: center;
+    background-color: #6F4E37;
+    color: #C19A6B
+}
+
+body {
+    background-color: #EADDCA;
+}
+
+#totalCals {
+    border: 2px solid #C19A6B;
+    padding: 10px;
+}
+
+#foodDetails label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+#foodDetails input {
+    width: 200px;
+
+}
+
