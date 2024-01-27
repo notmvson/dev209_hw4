@@ -3,16 +3,13 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 150%;
     text-align: center;
+    background-color: #EADDCA;
 }
 
 h2 {
     text-align: center;
     background-color: #6F4E37;
     color: #C19A6B
-}
-
-body {
-    background-color: #EADDCA;
 }
 
 #totalCals {
@@ -28,6 +25,10 @@ body {
 
 #foodDetails input {
     width: 200px;
-
+    margin-bottom: 10px;
 }
 
+#submitButton {
+    position: absolute;
+    right: 336px;
+}
