@@ -28,20 +28,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-#submitButton {
-    margin: 0;
-    position: absolute;
-    top: 22.5%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 47%;
-}
-
-#resetButton {
-    margin: 0;
-    position: absolute;
-    top: 22.5%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: 47%;
+#buttons {
+    text-align: right;
 }

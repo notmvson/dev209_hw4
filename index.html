@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Food Form</title>
-        <link rel="stylesheet" type=""text/css" href="site.css">
+        <link rel="stylesheet" type="text/css" href="site.css">
     </head>
 
     <body>
@@ -13,11 +13,14 @@
             <label for="foodName">Food Name:</label>
             <input name="foodName" id="foodName" /><br>
             <label for="calorieNumber"># of Calories:</label>
-            <input name="calorieNumber" id="calorieNumber" pattern="\d{20}"/><br>
+            <input name="calorieNumber" id="calorieNumber" pattern="\d+"/><br>
         </div>
         
-        <button type="button" id="submitButton">Submit</button>
-        <button type="button" id="resetButton">Reset</button>
+        <div id="buttons">
+            <button type="button" id="submitButton">Submit</button>
+            <button type="button" id="resetButton">Reset</button>
+        </div>
+        
 
         <br><br>        
 

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     let foodList = []; //array
-    let totalCaloriesInput = 0;//int
+    let totalCaloriesInput = 0; //int
 
     document.getElementById("submitButton").addEventListener("click", function() { //submit button click event
         let foodName = document.getElementById("foodName").value;
@@ -21,9 +21,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
             let newFoodItem = new newFood(foodName, foodCalories);
             foodList.push(newFoodItem); //adds food item to array
             console.log("New Item Added:", newFoodItem); //updates content of array in console
+            console.log("Updated Food List:", foodList); //updates the array in console
             console.log(intyFoodCalories + " Calories Will Be Added To Current Total Of " + totalCaloriesInput + " Calories");//shows current total calories in console
             totalCaloriesInput += intyFoodCalories; // adds int of foodCalories to current total
             document.getElementById("totalCalories").value = totalCaloriesInput; //pushes total to document
+
+            document.getElementById("foodName").value = "";
+            document.getElementById("calorieNumber").value = "";
         }
     })
 
