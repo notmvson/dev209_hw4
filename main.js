@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
 
     document.getElementById("resetButton").addEventListener("click", function(){
-        document.getElementById("foodName") = "";
-        document.getElementById("calorieNumber") = "";
-        document.getElementById("totalCalories") = "";
+        document.getElementById("foodName").value = "";
+        document.getElementById("calorieNumber").value = "";
+        document.getElementById("totalCalories").value = "";
         foodList = [];
         location. reload();
     })
