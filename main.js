@@ -17,13 +17,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
             foodList.push(newFoodItem); //adds food item to array
 
             console.log("New Item Added:", newFoodItem); //updates content of array in console
-           // document.getElementById("totalCalories") += parseInt(foodCalories);
+            totalCaloriesInput += parseInt(foodCalories);
+            document.getElementById("totalCalories") = totalCaloriesInput;
         } else {
             alert("Please enter both food name and calories");
         }
     })
 
     document.getElementById("resetButton").addEventListener("click", function(){
+        document.getElementById("foodName") = "";
+        document.getElementById("calorieNumber") = "";
+        document.getElementById("totalCalories") = "";
+        foodList = [];
         location. reload();
     })
 
