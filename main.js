@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
             totalCaloriesInput += intyFoodCalories; // adds int of foodCalories to current total
             document.getElementById("totalCalories").value = totalCaloriesInput; //pushes total to document
 
-            document.getElementById("foodName").value = "";
-            document.getElementById("calorieNumber").value = "";
+            document.getElementById("foodName").value = ""; //clears food name input box
+            document.getElementById("calorieNumber").value = ""; //clears calorie input box
         }
     })
 
