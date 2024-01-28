@@ -29,6 +29,19 @@ h2 {
 }
 
 #submitButton {
+    margin: 0;
     position: absolute;
-    right: 336px;
+    top: 22.5%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 47%;
+}
+
+#resetButton {
+    margin: 0;
+    position: absolute;
+    top: 22.5%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 47%;
 }

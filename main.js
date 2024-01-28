@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
     let foodList = []; //array
-    let totalCaloriesInput = document.getElementById("totalCalories");
+    let totalCaloriesInput = parseInt(document.getElementById("totalCalories"));
 
     document.getElementById("submitButton").addEventListener("click", function() { //submit button click event
         let foodName = document.getElementById("foodName").value;
@@ -17,12 +17,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
             foodList.push(newFoodItem); //adds food item to array
 
             console.log("New Item Added:", newFoodItem); //updates content of array in console
+           // document.getElementById("totalCalories") += parseInt(foodCalories);
         } else {
             alert("Please enter both food name and calories");
         }
     })
 
-
+    document.getElementById("resetButton").addEventListener("click", function(){
+        location. reload();
+    })
 
 
 })
