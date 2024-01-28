@@ -11,18 +11,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     document.getElementById("submitButton").addEventListener("click", function() { //submit button click event
         let foodName = document.getElementById("foodName").value;
         let foodCalories = document.getElementById("calorieNumber").value;
+        let intyFoodCalories = parseInt(foodCalories);
 
-        if (parseInt(foodCalories) = NaN) { //check if valid input
-            alert("Please enter a valid integer for calories input");
-        } else if (foodName && foodCalories) {
+        if (!foodName || !foodCalories) { //check if there are two inputs
+            alert("Please enter both food name and calories");
+        } else if (isNaN(intyFoodCalories)){ // functionally checks if not int
+            alert("Calories must be an integer");
+        } else {
             let newFoodItem = new newFood(foodName, foodCalories);
             foodList.push(newFoodItem); //adds food item to array
             console.log("New Item Added:", newFoodItem); //updates content of array in console
-            console.log(foodCalories + " Calories Will Be Added To Current Total Of " + totalCaloriesInput + " Calories");//shows current total calories in console
-            totalCaloriesInput += parseInt(foodCalories); // adds int of foodCalories to current total
+            console.log(intyFoodCalories + " Calories Will Be Added To Current Total Of " + totalCaloriesInput + " Calories");//shows current total calories in console
+            totalCaloriesInput += intyFoodCalories; // adds int of foodCalories to current total
             document.getElementById("totalCalories").value = totalCaloriesInput; //pushes total to document
-        } else {
-            alert("Please enter both food name and calories");
         }
     })
 
